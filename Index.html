@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media queries_Pagination</title>
+        <meta charset="utf-8" />
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .pagination{
+                display: inline-block;
+            }
+            .pagination a{
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-family: Arial, Verdana, sans-serif;
+            }
+            .pagination a.active{
+                background-color: green;
+                color: white;
+            }
+            .pagination a:hover:not(.active){
+                background-color: orange;
+            }
+
+            @media print {
+                .pagination{
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Media Queries _ Pagination</h1>
+        <p>Topics in Physics</p>
+        <ul>
+            <li>Magnetism</li>
+            <li>Radioactivity</li>
+            <li>Refraction</li>
+        </ul>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">class</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booleans</title>
+        <style>
+            button{
+                height: 40px;
+                border: 2px;
+                background-color: maroon;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            const message = 'I am doing great';
+            console.log(message);
+            const One = 44;
+            console.log(One);
+            //Use const by default because it can't be changed and it will make the code neater.
+
+            console.log(typeof 9);
+            console.log(typeof One);
+            console.log(typeof 'Mine');
+            console.log(typeof message);
+
+            //BOOLEAN AND IF STATEMENTS
+            // Shows whether a number is true or false
+
+            console.log( 3 < 5);
+            console.log( 3 > 5);
+
+            true
+            false
+
+            console.log(typeof true);
+            console.log(typeof false);
+
+          // comparison operators in boolean
+            console.log( 2 < 7);
+            console.log( 4 > 8);
+            console.log( 4 <= 7 );
+            console.log( 4 >= 7 );
+            console.log( 7 === '7.00' );
+            console.log( 7 === 7 );
+
+            //if statements
+            if (true){
+               console.log('hello');
+            }else{
+                console.log('else');
+            }
+            //With if statements, it will only dislay the results if true. But if it is false, the only result that will display is the 'else' attribute.
+
+            if (false) {
+             console.log('Hey buddy');
+            } else{
+                console.log('How are you?')
+            }
+        // 'else' is the opposite of 'if'
+        //In JavaScript, the if statement is used to execute a block of code if a specified condition is true. If the condition is false, you can use an else statement to execute a different block of code
+
+        let hour = 'Day';
+        let greeting;
+        if (hour < 12) {
+        greeting = "Good morning";
+        } else {
+        greeting = "Good afternoon";
+        }
+        console.log(greeting); 
+        //The value inside the parenthesis is a condition
+        //And inside the curly braces is 'branches'
+
+        const today = 37;
+        if ( today === 50 ){
+            console.log('This is a good day');
+        }else {
+            console.log('Negative');
+        }
+
+        // let user = prompt("Enter you age")
+        // if ( user <= 18 ){
+        //     console.log('You can drive');
+        // } else {
+        //     console.log("Bro, You can't drive");
+        // }
+
+        let crawl = 30;
+        if ( crawl >= 49 ) {
+            console.log('I can drive perfectly');
+        } else if ( 29 <= crawl ) {
+            console.log('Wow! Almost there');
+        }else{
+            console.log('Oops! Not yet');
+        }
+
+        </script>
+    </body>
+</html>

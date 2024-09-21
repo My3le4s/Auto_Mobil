@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LESSON RECAP</title>
+    </head>
+    <style>
+        .buttons{
+            width: 70px;
+            height: 40px;
+            background-color: aqua;
+            color: aliceblue;
+        }
+
+    </style>
+    <body>
+        <div class="buttons">
+            <button onclick="console.log('This box is empty')">Empty Box</button>
+            <button onclick="Box += 1; console.log('You added a white ball')">Ball One(white)</button>
+            <button onclick="Box += 1; console.log('You added a Blue ball')">Ball two(Blue)</button>
+            <button onclick="Box += 1; console.log('You added a Red ball')">Ball Three(Red)</button>
+        </div>
+      
+
+
+        <script>
+
+            let Box = 0;
+            //This is the initial quantity of the box
+
+            let One = 'Mine';
+            console.log(One);
+
+            let Two = 40 + 33;
+            console.log(Two);
+
+            const clear = One + Two;
+            console.log(clear);
+
+            console.log(typeof true);
+            //The moment you include a quote on a text, it becomes a string(Do not quote variable names and booleans)
+            Two -= 23;
+            console.log(Two);
+
+            Two %= 20;
+            console.log(typeof Two);
+
+            Two += One;
+            console.log(Two);
+
+            let name = "John";
+            console.log(typeof name);
+            console.log('I have a pretty name');
+
+            let aah = 5 === 5.00;
+            console.log(aah);
+
+            let You = 90 >= 67;
+            if (You) {
+                console.log('Thats right');
+            }else{
+                console.log("That doesn't sound right")
+            }
+
+            let oneCursor = (278 + 8370) >= (458 * 10);
+            if (oneCursor) {
+                console.log('You did it!');
+            } else {
+                console.log("Oops! You didn't");
+            }
+            // I can cormfortably do the following without point of immediate reference.Boolean(comparison operators), numbers and floating points(floats) and strings.
+            //How to create a popup message(alert), and an onclick message.
+            
+        </script>
+    </body>
+</html>
