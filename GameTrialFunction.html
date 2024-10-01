@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use Of Functions</title>
+        <link rel="stylesheet" href="GameTrial.js">
+    </head>
+    <body>
+        <p>Rock   Paper  Scissors</p>
+
+        <div class="buttons">
+            <button onclick="
+            // We follow an algorithm through this process
+
+            //Step 1; Create a random number the computer can choose from
+
+            //Step 2; Create a move that the computer will as its moves. Due to scoping, we create a variable outside the if statement that it can be used by all else ifs
+               pickComputerMove();
+
+                // This is results to my move or the button I click
+                let myMove = '';
+                if (sectionOne === 'Rock') {
+                    myMove = 'We Tie';
+                } else if ( sectionOne === 'Paper') {
+                    myMove = 'You win';
+                } else if ( sectionOne === 'Scissors') {
+                    myMove = 'You lose';
+                }
+                alert(`I pick Rock. You picked ${sectionOne}. ${myMove}.`);
+                ">ROCK</button>
+
+
+            <button onclick="
+             const rocky = Math.random();
+
+            //Step 2; Create a move that the computer will as its moves. Due to scoping, we create a variable outside the if statement that it can be used by all else ifs
+            pickComputerMove();
+
+                // This is results to my move or the button I click
+                let myMove = '';
+                if (sectionOne === 'Rock') {
+                    myMove = 'You win';
+                } else if ( sectionOne === 'Paper') {
+                    myMove = 'We tie';
+                } else if ( sectionOne === 'Scissors') {
+                    myMove = 'You lose';
+                }
+                alert(`I pick Paper. You picked ${sectionOne}. ${myMove}.`);
+            ">PAPER</button>
+
+            
+            <button onclick="
+             const rocks = Math.random();
+
+            //Step 2; Create a move that the computer will as its moves. Due to scoping, we create a variable outside the if statement that it can be used by all else ifs
+              pickComputerMove();
+                // This is results to my move or the button I click
+                let myMove = '';
+                if (sectionOne === 'Rock') {
+                    myMove = 'You lose';
+                } else if ( sectionOne === 'Paper') {
+                    myMove = 'You win';
+                } else if ( sectionOne === 'Scissors') {
+                    myMove = 'We Tie';
+                }
+                alert(`I pick Scissors. You picked ${sectionOne}. ${myMove}.`);
+            ">SCISSOR</button>
+        </div>
+
+
+        <script>
+
+         let sectionOne = '';
+
+            function pickComputerMove () {
+                const rock = Math.random();
+
+                if (rock >= 0 && rock < 1/3) {
+                    sectionOne = 'Rock';
+                } else if ( rock >= 1/3 && rock < 2/3){
+                    sectionOne = 'Paper';
+                } else if ( rock >= 2/3 && rock < 1) {
+                    sectionOne = 'Scissors';
+                }
+                console.log(sectionOne);
+
+                return sectionOne;
+            }
+
+            //Just like in if statements, functions create a scope too. To avoid scoping, create a variable outside the function
+
+            //Functions make writing and updating a code to be much easier as its written once and called many different times
+
+            //Return statement lets us get a value from a function
+
+           // return 19;
+           // return 'rock';
+
+           // After the return statement, every code below it becomes invalid. a return statement is called in a function
+
+
+
+
+            const hour = 13;
+
+            if (hour < 12) {
+                console.log('Good morning!');
+            } else if( hour >= 12) {
+                console.log('Good afternoon!');
+            } else{
+                console.log('Good night!');
+            }
+
+            const name = 'Sandra';
+            if (name) {
+                console.log('Hello Sandra');
+            }
+            const age = '';
+            if (age <= 6 || age >= 65) {
+                console.log('Discount');
+            } else {
+                console.log('No Discount');
+            }
+
+            const game = Math.random();
+            if (game >= 0 && game < 0.5) {
+                console.log('Its heads');
+            } else {
+                console.log('Its tails');
+            }
+
+        </script>
+    </body>
+</html>
